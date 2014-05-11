@@ -15,4 +15,4 @@ load <- function(t) {
 
 data <- rbind(load("test"), load("train"))
 tidy <- aggregate(. ~ subject + activity, data, mean)
-write.table(tidy, "tidy.csv")
+write.table(tidy, "tidy.txt")
